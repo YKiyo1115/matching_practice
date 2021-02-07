@@ -29,7 +29,11 @@ class MyRoot(BoxLayout):
         self.lbl.value = 0
         self.add_widget(self.lbl)
         box = BoxLayout(orientation='vertical')
+<<<<<<< HEAD
         btn1 = IncreaseButton(text = 'Increasehogehoge')#インクリメント機能を持つボタンをインスタンス化
+=======
+        btn1 = IncreaseButton(text = 'IncreaseAAA')#インクリメント機能を持つボタンをインスタンス化
+>>>>>>> upstream/master
         btn2 = ResetButton(text = 'Reset')#リセット機能を持つボタンをインスタンス化
         box.add_widget(btn1)#④インクリメント機能を持つボタンをBoxLayoutのwidgetに追加する。
         box.add_widget(btn2)#⑤リセット機能を持つボタンをBoxLayoutのwidgetに追加する。
