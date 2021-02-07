@@ -52,4 +52,8 @@ class MyRoot(BoxLayout):
         box.add_widget(btn2)#⑤リセット機能を持つボタンをBoxLayoutのwidgetに追加する。
         self.add_widget(box)
 
+<<<<<<< HEAD
+SampleApp().run()#①処理の開始あ
+=======
 SampleApp().run()#①処理の開始AA
+>>>>>>> upstream/master
