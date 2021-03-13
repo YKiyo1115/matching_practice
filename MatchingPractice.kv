@@ -1,0 +1,49 @@
+<Label>:
+	font_size:32
+<MyRoot>:
+    orientation:'vertical'
+    FloatLayout:
+	    id:loginScreen
+		canvas:
+			Rectangle:
+				size:self.size
+				pos:self.pos
+				source: "dog.jpg"
+		BoxLayout:
+		    id:userLayout
+		    orientation:'horizontal'
+			size_hint:0.5,0.1
+			pos_hint:{'center_x':0.5, 'top':0.9}
+	    	Label:
+			    id:userLabel
+				text:'user:'
+				size_hint_x:1
+			TextInput:
+			    id:userInput
+				size_hint_x:3
+				text:'user'
+		BoxLayout:
+		    id:passLayout
+		    orientation:'horizontal'
+			size_hint:0.5,0.1
+			pos_hint:{'center_x':0.5, 'top':0.8}
+			Label:
+			    id:passLabel
+				size_hint_x:1
+				text:'pass:'
+			TextInput:
+			    id:passInput
+				size_hint_x:3
+				text:'password'
+		Button:
+		    id:loginButton
+			size_hint:0.4,0.1
+			pos_hint:{'center_x':0.5, 'top':0.4}
+			text:'Login'
+			on_press:userInput.text='Button Click!'
+		Button:
+		    id:newMemberButton
+			size_hint:0.4,0.1
+			pos_hint:{'center_x':0.5, 'top':0.3}
+			text:'New member!!'
+			on_press:passInput.text='Button Click!'
